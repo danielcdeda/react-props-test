@@ -1,3 +1,4 @@
+import Avatar from "./components/avatar";
 import Card from "./components/card";
 import contacts from "./components/contacts";
 
@@ -5,6 +6,7 @@ function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
+      <Avatar imgURL = 'https://cdn.iset.io/assets/55268/produtos/966/adesivo-para-geladeira-homer-simpson-com-cerveja-3.jpg'/>
       <Card 
         name={contacts[0].name}
         imgURL={contacts[0].imgURL}

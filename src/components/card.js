@@ -1,16 +1,16 @@
+import Avatar from "./avatar";
+import Info from "./details";
+
+
 function Card(props) {
 return (
     <div className="card">
         <div className="top">
             <h2 className="name">{props.name}</h2>
-            <img className="circle-img"
-                src={props.imgURL}
-                alt="avatar_img"
-            />
+            <Avatar imgURL={props.imgURL} />
         </div>
         <div className="bottom">
-            <p className="info">{props.phone}</p>
-            <p className="info">{props.email}</p>
+            <Info phone={props.phone} email={props.email}/>
         </div>
     </div>
 )}
